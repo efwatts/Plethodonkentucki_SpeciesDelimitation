@@ -1,0 +1,25 @@
+ParallelStructure on XSEDE - Parameters
+runtime_	5
+set_ancestdist_	false
+set_locdata_	false
+set_markernames_	false
+set_noadmix_	false
+set_numinds_	21
+set_numloci_	279
+set_onerowperind_	false
+set_phased_	false
+set_phaseinfo_	false
+set_phenotype_	false
+set_ploidy_	2
+set_popdata_	true
+set_popflag_	false
+set_recessivealleles_	false
+set_sitebysite_	false
+specify_threads_	380
+use_inferalpha_	true
+use_linkagemodel_	false
+use_locprior_	false
+use_onefst_	false
+use_popalphas_	false
+use_popinfo_	false
+Parameter 'joblist_file_'
