@@ -1,0 +1,71 @@
+cd /Users/emily/Desktop/TreeMix/TM_5pops_edit
+
+for m in {1..4}
+	do
+	for i in {1..5}
+	do
+	treemix \
+		-i TMinput_ONE_5_edit.gz \
+		-o 5pops.k10.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 10
+	done
+done
+
+for m in {1..4}
+	do
+	for i in {1..5}
+	do
+	treemix \
+		-i TMinput_ONE_5_edit.gz \
+		-o 5pops.k100.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 100  
+	done
+done
+
+for m in {1..4}
+	do
+	for i in {1..5}
+	do
+	treemix \
+		-i TMinput_ONE_5_edit.gz \
+		-o 5pops.k50.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 50  
+	done
+done
+
+for m in {1..4}
+	do
+	for i in {1..5}
+	do
+	treemix \
+		-i TMinput_ONE_5_edit.gz \
+		-o 5pops.k20.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 20  
+	done
+done
+
+for m in {1..4}
+	do
+	for i in {1..5}
+	do
+	treemix \
+		-i TMinput_ONE_5_edit.gz \
+		-o 5pops.k5.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 5  
+	done
+done

@@ -1,0 +1,29 @@
+cd /Users/emily/Desktop/TreeMix/TM_4pops
+
+for m in {1..4}
+	do
+	for i in {1..10}
+	do
+	treemix \
+		-i treemix4input.gz \
+		-o 4pops.k10.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 10
+	done
+done
+
+for m in {1..4}
+	do
+	for i in {1..10}
+	do
+	treemix \
+		-i treemix4input.gz \
+		-o 4pops.k100.${i}.${m} \
+		-global \
+		-root PETRAEUS \
+		-m ${m} \
+		-k 100  
+	done
+done
