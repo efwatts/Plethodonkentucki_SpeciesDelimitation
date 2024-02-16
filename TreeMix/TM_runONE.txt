@@ -1,0 +1,27 @@
+for m in {1..18}
+	do
+	for i in {1..10}
+	do
+	treemix \
+		-i TMinput_ONE_20.gz \
+		-o 20pops.k10.${i}.${m} \
+		-global \
+		-root Petraeus \
+		-m ${m} \
+		-k 10
+	done
+done
+
+for m in {1..18}
+	do
+	for i in {1..10}
+	do
+	treemix \
+		-i TMinput_ONE_20.gz \
+		-o 20pops.k100.${i}.${m} \
+		-global \
+		- root Petraeus \
+		-m ${m} \
+		-k 100  
+	done
+done
